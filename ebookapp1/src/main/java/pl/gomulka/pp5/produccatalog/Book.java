@@ -15,7 +15,10 @@ import java.math.BigDecimal;
 @Builder
 @Entity
 @NoArgsConstructor
+
 public class Book {
+
+    private Book() {}
     @Id
     @GeneratedValue
     Long id;

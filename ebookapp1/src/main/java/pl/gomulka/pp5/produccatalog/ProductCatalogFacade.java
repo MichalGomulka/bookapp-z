@@ -9,14 +9,11 @@ public class ProductCatalogFacade {
         this.repository = repository;
     }
 
-    public List<Book> allBooks() {
-        return.repository.findAll();
-    }
-    
     public void addBook(Book book) {
         repository.save(book);
     }
 
     public List<Book> allBooks() {
+        return repository.findAll();
     }
 }
