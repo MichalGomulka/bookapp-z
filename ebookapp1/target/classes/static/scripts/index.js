@@ -4,7 +4,7 @@ document.addEventListener("DOMContentReady", () => {
 
 function getProducts() {
     return fetch("/api/products")
-        .then((response) => response.join())
+        .then((response) => response.json())
         .catch((error) => console.log(error))
 }
 
