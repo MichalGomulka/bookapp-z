@@ -1,11 +1,12 @@
-package pl.gomulka.pp5.produccatalog;
+package pl.gomulka.pp5.ebook.produccatalog;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import sun.dc.pr.PRError;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api")
@@ -15,7 +16,7 @@ public class CatalogController {
 
 
     @GetMapping("/products")
-    Lisst<Books> listAllBooks() {
+    List<Book> listAllBooks() {
         return productCatalogFacade.allBooks();
     }
 }

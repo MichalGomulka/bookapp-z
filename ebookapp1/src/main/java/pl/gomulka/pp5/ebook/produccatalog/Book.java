@@ -1,4 +1,4 @@
-package pl.gomulka.pp5.produccatalog;
+package pl.gomulka.pp5.ebook.produccatalog;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,7 +18,6 @@ import java.math.BigDecimal;
 
 public class Book {
 
-    private Book() {}
     @Id
     @GeneratedValue
     Long id;

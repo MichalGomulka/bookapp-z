@@ -1,4 +1,4 @@
-package pl.gomulka.pp5.produccatalog;
+package pl.gomulka.pp5.ebook.produccatalog;
 
 
 import org.junit.Test;
@@ -11,7 +11,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.sound.sampled.Port;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -30,7 +29,7 @@ public class HttpCatalogTest {
     int port;
 
     @Test
-    public void itALlowListProductsViaHttpEndpoint() {
+    public void itAllowListProductsViaHttpEndpoint() {
         thereIsPublishedBook("Lord of the Rings");
         thereIsPublishedBook("Hobbit");
 

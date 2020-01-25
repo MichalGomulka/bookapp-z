@@ -1,4 +1,4 @@
-package pl.gomulka.pp5.produccatalog;
+package pl.gomulka.pp5.ebook.produccatalog;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Test;

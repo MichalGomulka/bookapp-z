@@ -1,11 +1,11 @@
-package pl.gomulka.pp5.produccatalog;
+package pl.gomulka.pp5.ebook.produccatalog;
 
 import java.util.List;
 
 public class ProductCatalogFacade {
     private BookRepository repository;
 
-    public ProductCatalogFacade(BookRepository repostory) {
+    public ProductCatalogFacade(BookRepository repository) {
         this.repository = repository;
     }
 
